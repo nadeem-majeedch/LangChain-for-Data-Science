@@ -1,0 +1,63 @@
+# =============================================================================
+# LangChain for Data Science — .gitignore
+# =============================================================================
+
+# --- Secrets & Environment ---
+.env
+.env.local
+.env.*.local
+
+# --- Python ---
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.egg-info/
+dist/
+build/
+*.egg
+
+# --- Virtual Environments ---
+venv/
+.venv/
+env/
+ENV/
+
+# --- Jupyter Notebook Checkpoints ---
+.ipynb_checkpoints/
+*.ipynb_checkpoints/
+
+# --- OS Files ---
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# --- IDE / Editor ---
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# --- LangChain / Ollama ---
+langchain_debug.log
+*.pkl
+*.pickle
+
+# --- ChromaDB Persistence ---
+chroma_db/
+*.chroma/
+
+# --- Data Files (large) ---
+data/*.csv
+data/*.json
+data/*.parquet
+!data/README.md
+
+# --- Logs ---
+*.log
+
+# --- Misc ---
+.cache/
+.pytest_cache/
+.mypy_cache/
