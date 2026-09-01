@@ -37,3 +37,6 @@ ipykernel>=6.0               # Python kernel for Jupyter
 
 # --- Document Loading (for RAG notebooks) ---
 pypdf>=4.0                   # PDF document loading
+
+# --- Document Generation (for creating sample PDFs) ---
+fpdf2>=2.7               # PDF creation for demos
