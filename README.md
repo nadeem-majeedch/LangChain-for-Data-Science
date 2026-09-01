@@ -61,8 +61,8 @@ The notebooks are designed to be completed **in order**. Each notebook builds on
 ```
 LEARNING PATH
 
-01 --> 02 --> 03 --> 04 --> 05 --> 06 --> 07 --> 08 --> 09
-Intro   Msgs  LCEL   Embed   RAG   Agent  Capstone  Adv.RAG  Docs
+01 --> 02 --> 03 --> 04 --> 05 --> 06 --> 07 --> 08 --> 09 --> 10
+Intro   Msgs  LCEL   Embed   RAG   Agent  Capstone  Adv.RAG  Docs  SQL
 
 <-- Foundations --><-- Core Skills --><-- Advanced -->
 ```
@@ -71,7 +71,7 @@ Intro   Msgs  LCEL   Embed   RAG   Agent  Capstone  Adv.RAG  Docs
 |---|---|---|
 | **Foundations** | 01 -- 02 | What is LangChain, models, prompts, messages |
 | **Core Skills** | 03 -- 05 | Chains (LCEL), embeddings, vector stores, RAG |
-| **Advanced** | 06 -- 09 | Tools, agents, capstone, advanced RAG, document processing |
+| **Advanced** | 06 -- 10 | Tools, agents, capstone, advanced RAG, document processing, SQL |
 
 ---
 
@@ -88,6 +88,7 @@ Intro   Msgs  LCEL   Embed   RAG   Agent  Capstone  Adv.RAG  Docs
 | 07 | `07_Advanced_LangChain_Project.ipynb` | Capstone: Data Science AI Tutor combining RAG, tools, structured output, embeddings into one application | Expert | 150--180 min |
 | 08 | `08_Advanced_RAG.ipynb` | Advanced RAG: chunking, metadata filtering, query transformation, reranking, hybrid search, evaluation, security | Expert | 180--240 min |
 | 09 | `09_Document_Loading_and_Multimodal_RAG.ipynb` | Document processing: PDF, CSV, JSON, HTML, multimodal RAG, security | Expert | 150--180 min |
+| 10 | `10_SQL_and_Database_AI.ipynb` | SQL generation, database tools, natural language data analyst, security | Expert | 120--150 min |
 
 ---
 
@@ -261,7 +262,7 @@ LangChain-for-Data-Science/
 ├── requirements.txt          # Python dependencies
 ├── .env.example              # API key template (safe to commit)
 ├── .gitignore                # Protects secrets and temp files
-├── notebooks/                # Jupyter notebooks (01--09)
+├── notebooks/                # Jupyter notebooks (01--10)
 │   ├── 01_LangChain_Introduction.ipynb
 │   ├── 02_Models_Prompts_and_Messages.ipynb
 │   ├── 03_LCEL_and_Chains.ipynb
@@ -270,7 +271,8 @@ LangChain-for-Data-Science/
 │   ├── 06_Tools_and_Agents.ipynb
 │   ├── 07_Advanced_LangChain_Project.ipynb
 │   ├── 08_Advanced_RAG.ipynb
-│   └── 09_Document_Loading_and_Multimodal_RAG.ipynb
+│   ├── 09_Document_Loading_and_Multimodal_RAG.ipynb
+│   └── 10_SQL_and_Database_AI.ipynb
 ├── data/
 │   ├── README.md             # Data directory guide
 │   └── ds_notes/             # Knowledge base for RAG notebooks
