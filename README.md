@@ -61,8 +61,8 @@ The notebooks are designed to be completed **in order**. Each notebook builds on
 ```
 LEARNING PATH
 
-01 --> 02 --> 03 --> 04 --> 05 --> 06 --> 07
-Intro   Msgs  LCEL   Embed   RAG   Agent  Capstone
+01 --> 02 --> 03 --> 04 --> 05 --> 06 --> 07 --> 08
+Intro   Msgs  LCEL   Embed   RAG   Agent  Capstone  Adv.RAG
 
 <-- Foundations --><-- Core Skills --><-- Advanced -->
 ```
@@ -71,7 +71,7 @@ Intro   Msgs  LCEL   Embed   RAG   Agent  Capstone
 |---|---|---|
 | **Foundations** | 01 -- 02 | What is LangChain, models, prompts, messages |
 | **Core Skills** | 03 -- 05 | Chains (LCEL), embeddings, vector stores, RAG |
-| **Advanced** | 06 -- 07 | Tools, agents, and a capstone project |
+| **Advanced** | 06 -- 08 | Tools, agents, capstone, and advanced RAG |
 
 ---
 
@@ -86,6 +86,7 @@ Intro   Msgs  LCEL   Embed   RAG   Agent  Capstone
 | 05 | `05_RAG_Applications.ipynb` | RAG pipeline, document loading, text splitting, retrieval, source inspection, failure modes | Advanced | 120--150 min |
 | 06 | `06_Tools_and_Agents.ipynb` | `@tool` decorator, `bind_tools`, `create_tool_calling_agent`, `create_agent` (LangChain 1.0), agent loop, responsible AI | Advanced | 120--150 min |
 | 07 | `07_Advanced_LangChain_Project.ipynb` | Capstone: Data Science AI Tutor combining RAG, tools, structured output, embeddings into one application | Expert | 150--180 min |
+| 08 | `08_Advanced_RAG.ipynb` | Advanced RAG: chunking, metadata filtering, query transformation, reranking, hybrid search, evaluation, security | Expert | 180--240 min |
 
 ---
 
@@ -218,7 +219,7 @@ api_key = os.getenv("OPENAI_API_KEY")
 | 1:00 -- 1:15 | **Embeddings & Vector Stores** | Explain embeddings conceptually, demo Chroma setup, similarity search on sample data |
 | 1:15 -- 1:35 | **RAG Pipeline** | Walk through a complete RAG application: load documents, split, embed, store, retrieve, generate |
 | 1:35 -- 1:50 | **Agents & Tools (Preview)** | Brief demo of an agent that uses tools. Explain what is coming in Notebook 06 |
-| 1:50 -- 2:00 | **Wrap-up & Next Steps** | Point students to remaining notebooks, capstone project expectations, and office hours |
+| 1:50 -- 2:00 | **Wrap-up & Next Steps** | Point students to remaining notebooks (07-08), capstone project, and advanced RAG topics |
 
 ---
 
@@ -259,14 +260,15 @@ LangChain-for-Data-Science/
 ├── requirements.txt          # Python dependencies
 ├── .env.example              # API key template (safe to commit)
 ├── .gitignore                # Protects secrets and temp files
-├── notebooks/                # Jupyter notebooks (01--07)
+├── notebooks/                # Jupyter notebooks (01--08)
 │   ├── 01_LangChain_Introduction.ipynb
 │   ├── 02_Models_Prompts_and_Messages.ipynb
 │   ├── 03_LCEL_and_Chains.ipynb
 │   ├── 04_Embeddings_and_Vector_Stores.ipynb
 │   ├── 05_RAG_Applications.ipynb
 │   ├── 06_Tools_and_Agents.ipynb
-│   └── 07_Advanced_LangChain_Project.ipynb
+│   ├── 07_Advanced_LangChain_Project.ipynb
+│   └── 08_Advanced_RAG.ipynb
 ├── data/
 │   ├── README.md             # Data directory guide
 │   └── ds_notes/             # Knowledge base for RAG notebooks
