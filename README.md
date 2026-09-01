@@ -1,31 +1,31 @@
-# 🔗 LangChain for Data Science
+# LangChain for Data Science
 
 ### Tools and Techniques in Data Science
 
 ![Python](https://img.shields.io/badge/Python-3.10+-blue?logo=python&logoColor=white)
-![LangChain](https://img.shields.io/badge/LangChain-latest-orange?logo=chainlink&logoColor=white)
+![LangChain](https://img.shields.io/badge/LangChain-1.0-orange?logo=chainlink&logoColor=white)
 ![License](https://img.shields.io/badge/License-MIT-green)
 ![Jupyter](https://img.shields.io/badge/Jupyter-Notebook-orange?logo=jupyter&logoColor=white)
 
 ---
 
-## 📋 Course Title
+## Course Title
 
-**Tools and Techniques in Data Science — LangChain Module**
+**Tools and Techniques in Data Science -- LangChain Module**
 
 A hands-on, self-learning tutorial series that takes BS Data Science students from LangChain fundamentals to building advanced AI-powered applications for data science workflows.
 
 ---
 
-## 🎯 Target Audience
+## Target Audience
 
 - **Primary:** BS Data Science students enrolled in *Tools and Techniques in Data Science*
 - **Secondary:** Graduate students, data analysts, and developers exploring LLM-based data science workflows
-- **Level:** Beginner → Intermediate → Advanced (progressive notebooks)
+- **Level:** Beginner to Expert (progressive notebooks)
 
 ---
 
-## 🎓 Learning Objectives
+## Learning Objectives
 
 By completing this tutorial series, you will be able to:
 
@@ -40,7 +40,7 @@ By completing this tutorial series, you will be able to:
 
 ---
 
-## 📚 Prerequisites
+## Prerequisites
 
 | Requirement | Details |
 |---|---|
@@ -54,53 +54,48 @@ By completing this tutorial series, you will be able to:
 
 ---
 
-## 🗺️ Learning Path
+## Learning Path
 
 The notebooks are designed to be completed **in order**. Each notebook builds on concepts from the previous one.
 
 ```
-┌─────────────────────────────────────────────────────────────┐
-│                     LEARNING PATH                           │
-├─────────────────────────────────────────────────────────────┤
-│                                                             │
-│  01 ──► 02 ──► 03 ──► 04 ──► 05 ──► 06 ──► 07              │
-│  Intro   Msgs  LCEL   Embed   RAG   Agent  Project         │
-│                                                             │
-│  ◄── Foundations ──►◄── Core Skills ──►◄── Advanced ──►     │
-│                                                             │
-└─────────────────────────────────────────────────────────────┘
+LEARNING PATH
+
+01 --> 02 --> 03 --> 04 --> 05 --> 06 --> 07
+Intro   Msgs  LCEL   Embed   RAG   Agent  Capstone
+
+<-- Foundations --><-- Core Skills --><-- Advanced -->
 ```
 
 | Phase | Notebooks | Focus |
 |---|---|---|
-| **Foundations** | 01 – 02 | What is LangChain, models, prompts, messages |
-| **Core Skills** | 03 – 05 | Chains (LCEL), embeddings, vector stores, RAG |
-| **Advanced** | 06 – 07 | Tools, agents, and a capstone project |
+| **Foundations** | 01 -- 02 | What is LangChain, models, prompts, messages |
+| **Core Skills** | 03 -- 05 | Chains (LCEL), embeddings, vector stores, RAG |
+| **Advanced** | 06 -- 07 | Tools, agents, and a capstone project |
 
 ---
 
-## 📓 Planned Notebook Roadmap
+## Notebook Roadmap
 
-| # | Notebook | Topics | Est. Time |
-|---|---|---|---|
-| 01 | `01_LangChain_Introduction.ipynb` | What is LangChain? Ecosystem overview, installation, first model call, API vs Ollama setup | 60–90 min |
-| 02 | `02_Models_Prompts_and_Messages.ipynb` | Chat models, prompt templates, few-shot prompting, message types (System/Human/AI), output parsers | 90–120 min |
-| 03 | `03_LCEL_and_Chains.ipynb` | LangChain Expression Language (LCEL), pipe operator, RunnablePassthrough, RunnableLambda, sequential & parallel chains | 90–120 min |
-| 04 | `04_Embeddings_and_Vector_Stores.ipynb` | Text embeddings, Chroma vector store, similarity search, metadata filtering, persistence | 90–120 min |
-| 05 | `05_RAG_Applications.ipynb` | Retrieval-Augmented Generation, document loaders, text splitters, full RAG pipeline, evaluation | 120–150 min |
-| 06 | `06_Tools_and_Agents.ipynb` | Custom tools, toolkits, ReAct agents, tool-calling, multi-step reasoning | 120–150 min |
-| 07 | `07_Advanced_LangChain_Project.ipynb` | Capstone project: end-to-end data science Q&A system combining RAG + agents + tools | 150–180 min |
+| # | Notebook | Topics | Difficulty | Est. Time |
+|---|---|---|---|---|
+| 01 | `01_LangChain_Introduction.ipynb` | What is LangChain, ecosystem, installation, first model call, API vs Ollama | Beginner | 60--90 min |
+| 02 | `02_Models_Prompts_and_Messages.ipynb` | Chat models, prompt templates, few-shot prompting, message types, output parsers, structured output | Beginner | 90--120 min |
+| 03 | `03_LCEL_and_Chains.ipynb` | LCEL pipe operator, RunnablePassthrough, RunnableLambda, RunnableParallel, sequential and parallel chains | Intermediate | 90--120 min |
+| 04 | `04_Embeddings_and_Vector_Stores.ipynb` | Text embeddings, Chroma vector store, similarity search, metadata filtering, persistence | Intermediate | 90--120 min |
+| 05 | `05_RAG_Applications.ipynb` | RAG pipeline, document loading, text splitting, retrieval, source inspection, failure modes | Advanced | 120--150 min |
+| 06 | `06_Tools_and_Agents.ipynb` | `@tool` decorator, `bind_tools`, `create_tool_calling_agent`, `create_agent` (LangChain 1.0), agent loop, responsible AI | Advanced | 120--150 min |
+| 07 | `07_Advanced_LangChain_Project.ipynb` | Capstone: Data Science AI Tutor combining RAG, tools, structured output, embeddings into one application | Expert | 150--180 min |
 
 ---
 
-## ☁️ API vs 🦙 Local Ollama Approach
+## API vs Local Ollama Approach
 
 This repository supports **two parallel approaches** so you can choose what fits your situation:
 
 | | **Cloud API (OpenAI)** | **Local (Ollama)** |
 |---|---|---|
-| **Location** | `examples/api/` | `examples/ollama/` |
-| **Model provider** | OpenAI (GPT-4o, GPT-4o-mini) | Open-source models (Llama 3, Mistral, Phi-3, etc.) |
+| **Model provider** | OpenAI (GPT-4o, GPT-4o-mini) | Open-source models (Llama 3.2, Mistral, Qwen, etc.) |
 | **Cost** | Pay-per-token usage | Free (runs on your hardware) |
 | **Internet** | Required | Not required after model download |
 | **Speed** | Fast (cloud GPUs) | Depends on your hardware |
@@ -110,13 +105,13 @@ This repository supports **two parallel approaches** so you can choose what fits
 
 ### When to use which?
 
-- **Classroom / Lab sessions with internet** → Use the OpenAI API approach
-- **Self-study at home without credits** → Use the Ollama local approach
+- **Classroom / Lab sessions with internet** -- Use the OpenAI API approach
+- **Self-study at home without credits** -- Use the Ollama local approach
 - **Both paths teach the same concepts** with identical LangChain code patterns
 
 ---
 
-## ⚡ Installation
+## Installation
 
 ### 1. Clone the repository
 
@@ -156,14 +151,15 @@ cp .env.example .env
 
 ```bash
 # Install Ollama: https://ollama.com/download
-# Then pull a model:
-ollama pull llama3.2
-ollama pull mistral
+ollama --version          # Verify installation
+ollama pull llama3.2      # Pull the default model
+ollama pull nomic-embed-text  # Pull embedding model
+ollama list               # Verify models are available
 ```
 
 ---
 
-## 🚀 Launching Jupyter
+## Launching Jupyter
 
 ```bash
 # Start Jupyter Notebook
@@ -173,37 +169,27 @@ jupyter notebook
 jupyter lab
 ```
 
-Then navigate to the `notebooks/` directory and open the first notebook:
-
-```
-notebooks/
-├── 01_LangChain_Introduction.ipynb
-├── 02_Models_Prompts_and_Messages.ipynb
-├── 03_LCEL_and_Chains.ipynb
-├── 04_Embeddings_and_Vector_Stores.ipynb
-├── 05_RAG_Applications.ipynb
-├── 06_Tools_and_Agents.ipynb
-└── 07_Advanced_LangChain_Project.ipynb
-```
+Then navigate to the `notebooks/` directory and open the first notebook.
 
 ---
 
-## 🔐 Security Notes — API Keys
+## Security Notes -- API Keys
 
-> **⚠️ NEVER commit API keys to version control.**
+> **NEVER commit API keys to version control.**
 
 This repository uses `python-dotenv` and a `.env` file to manage secrets safely.
 
-| Do ✅ | Don't ❌ |
+| Do | Do Not |
 |---|---|
 | Store keys in `.env` (git-ignored) | Hardcode keys in notebooks or `.py` files |
 | Use `.env.example` as a template | Commit `.env` to Git |
 | Share `.env.example` with teammates | Share actual API keys |
 | Use environment variables | Paste keys in screenshots or chat |
 
-Your `.env` file is listed in `.gitignore` and **will not** be tracked by Git. Always load keys with:
+Your `.env` file is listed in `.gitignore` and **will not** be tracked by Git.
 
 ```python
+# Correct way to use API keys:
 from dotenv import load_dotenv
 import os
 
@@ -213,73 +199,136 @@ api_key = os.getenv("OPENAI_API_KEY")
 
 ---
 
-## 🕐 Suggested 2-Hour Classroom Lecture Structure
+## Suggested 2-Hour Classroom Lecture Structure
 
 ### Hour 1: Foundations (60 minutes)
 
 | Time | Segment | Activities |
 |---|---|---|
-| 0:00 – 0:10 | **Introduction & Motivation** | What is LangChain? Why should data scientists care? Live demo of a simple chat model call |
-| 0:10 – 0:25 | **Models, Prompts & Messages** | Walk through Notebook 02: prompt templates, few-shot examples, message types. Students follow along |
-| 0:25 – 0:40 | **LCEL & Chains** | Demonstrate the pipe `|` operator, chaining prompts → models → output parsers. Students build their first chain |
-| 0:40 – 0:50 | **Hands-on Exercise** | Students build a simple chain that transforms data (e.g., summarize → translate → format) |
-| 0:50 – 1:00 | **Q&A & Recap** | Review key concepts, address questions |
+| 0:00 -- 0:10 | **Introduction & Motivation** | What is LangChain? Why should data scientists care? Live demo of a simple chat model call |
+| 0:10 -- 0:25 | **Models, Prompts & Messages** | Walk through Notebook 02: prompt templates, few-shot examples, message types. Students follow along |
+| 0:25 -- 0:40 | **LCEL & Chains** | Demonstrate the pipe `\|` operator, chaining prompts to models to output parsers. Students build their first chain |
+| 0:40 -- 0:50 | **Hands-on Exercise** | Students build a simple chain that transforms data (e.g., summarize, translate, format) |
+| 0:50 -- 1:00 | **Q&A & Recap** | Review key concepts, address questions |
 
 ### Hour 2: Applied Skills (60 minutes)
 
 | Time | Segment | Activities |
 |---|---|---|
-| 1:00 – 1:15 | **Embeddings & Vector Stores** | Explain embeddings conceptually, demo Chroma setup, similarity search on sample data |
-| 1:15 – 1:35 | **RAG Pipeline** | Walk through a complete RAG application: load documents → split → embed → store → retrieve → generate |
-| 1:35 – 1:50 | **Agents & Tools (Preview)** | Brief demo of an agent that uses tools. Explain what's coming in Notebook 06 |
-| 1:50 – 2:00 | **Wrap-up & Next Steps** | Point students to remaining notebooks, project expectations, and office hours |
+| 1:00 -- 1:15 | **Embeddings & Vector Stores** | Explain embeddings conceptually, demo Chroma setup, similarity search on sample data |
+| 1:15 -- 1:35 | **RAG Pipeline** | Walk through a complete RAG application: load documents, split, embed, store, retrieve, generate |
+| 1:35 -- 1:50 | **Agents & Tools (Preview)** | Brief demo of an agent that uses tools. Explain what is coming in Notebook 06 |
+| 1:50 -- 2:00 | **Wrap-up & Next Steps** | Point students to remaining notebooks, capstone project expectations, and office hours |
 
 ---
 
-## 📁 Repository Structure
+## Capstone Project
+
+Notebook 07 is a **complete capstone project** that combines everything from Notebooks 01--06 into a single **Data Science AI Tutor** application. The capstone includes:
+
+- RAG pipeline with a knowledge base of Data Science notes
+- Structured output using Pydantic models (concept explanations, quiz questions)
+- Numerical calculation tools (mean, standard deviation, correlation, dataset summary)
+- Both API and local Ollama implementations
+- A final assignment to build your own domain-specific AI tutor
+
+See the **Capstone Assignment** section in Notebook 07 for detailed requirements and domain ideas.
+
+---
+
+## Troubleshooting
+
+| Problem | Cause | Solution |
+|---------|-------|----------|
+| `ModuleNotFoundError: No module named 'langchain'` | Packages not installed | Run `pip install -r requirements.txt` |
+| `AuthenticationError: Incorrect API key` | Wrong or missing API key | Check your `.env` file has the correct `OPENAI_API_KEY` |
+| `ConnectionError` when using Ollama | Ollama not running | Start Ollama: `ollama serve` (or launch the Ollama app) |
+| `Model not found` in Ollama | Model not pulled yet | Run `ollama pull llama3.2` and `ollama pull nomic-embed-text` |
+| Notebook won't run top-to-top | Variables from previous cells needed | Restart kernel and run all cells from the beginning |
+| ChromaDB errors | Corrupted vector store | Delete the `data/chroma_db/` directory and re-run |
+| `RateLimitError` from OpenAI | Too many requests or quota exceeded | Wait and retry, or switch to Ollama for local execution |
+| Emoji rendering issues in terminal | Windows terminal encoding | Use Windows Terminal or VS Code terminal instead of cmd.exe |
+
+---
+
+## Repository Structure
 
 ```
 LangChain-for-Data-Science/
-├── README.md                 ← You are here
-├── requirements.txt          ← Python dependencies
-├── .env.example              ← API key template (safe to commit)
-├── .gitignore                ← Protects secrets & temp files
-├── notebooks/                ← Jupyter notebooks (01–07)
-├── data/                     ← Sample datasets for exercises
-│   └── README.md
-├── docs/                     ← Additional documentation & notes
+├── README.md                 # This file
+├── requirements.txt          # Python dependencies
+├── .env.example              # API key template (safe to commit)
+├── .gitignore                # Protects secrets and temp files
+├── notebooks/                # Jupyter notebooks (01--07)
+│   ├── 01_LangChain_Introduction.ipynb
+│   ├── 02_Models_Prompts_and_Messages.ipynb
+│   ├── 03_LCEL_and_Chains.ipynb
+│   ├── 04_Embeddings_and_Vector_Stores.ipynb
+│   ├── 05_RAG_Applications.ipynb
+│   ├── 06_Tools_and_Agents.ipynb
+│   └── 07_Advanced_LangChain_Project.ipynb
+├── data/
+│   ├── README.md             # Data directory guide
+│   └── ds_notes/             # Knowledge base for RAG notebooks
+├── docs/                     # Additional documentation
 ├── images/
-│   └── diagrams/            ← Architecture & concept diagrams
+│   └── diagrams/            # Architecture and concept diagrams
 └── examples/
-    ├── api/                  ← OpenAI API example scripts
-    └── ollama/               ← Local Ollama example scripts
+    ├── api/                  # OpenAI API example scripts
+    └── ollama/               # Local Ollama example scripts
 ```
 
 ---
 
-## 📦 Key Dependencies
+## Key Dependencies
 
 | Package | Purpose |
 |---|---|
-| `langchain` | Core LangChain framework |
-| `langchain-openai` | OpenAI chat models & embeddings |
-| `langchain-ollama` | Ollama (local) chat models & embeddings |
+| `langchain` | Core LangChain framework (v1.0+) |
+| `langchain-core` | Core abstractions (LCEL, prompts, output parsers) |
+| `langchain-openai` | OpenAI chat models and embeddings |
+| `langchain-ollama` | Ollama chat models and embeddings |
 | `langchain-text-splitters` | Document chunking for RAG |
 | `langchain-chroma` | Chroma vector store integration |
+| `chromadb` | Vector database engine |
 | `openai` | OpenAI Python SDK |
-| `chromadb` | Vector database |
-| `pydantic` | Data validation & structured outputs |
+| `pydantic` | Data validation and structured outputs |
 | `python-dotenv` | Secure environment variable management |
 | `numpy` | Numerical computing |
 | `pandas` | Data manipulation |
-| `scikit-learn` | ML utilities & evaluation metrics |
+| `scikit-learn` | ML utilities and evaluation metrics |
 | `matplotlib` | Data visualization |
 
 ---
 
-## 🤝 Contributing
+## LangChain 1.0 APIs Used
 
-Contributions welcome! This is an educational repository — feel free to:
+This repository uses current LangChain 1.0 (October 2025) APIs:
+
+| API | Package | Purpose |
+|-----|---------|---------|
+| `ChatOpenAI` | `langchain-openai` | Cloud-based chat model |
+| `ChatOllama` | `langchain-ollama` | Local chat model |
+| `OpenAIEmbeddings` | `langchain-openai` | Cloud embeddings |
+| `OllamaEmbeddings` | `langchain-ollama` | Local embeddings |
+| `ChatPromptTemplate` | `langchain-core` | Prompt construction |
+| `StrOutputParser` | `langchain-core` | Text output parsing |
+| `RunnablePassthrough` | `langchain-core` | LCEL pipeline composition |
+| `@tool` | `langchain-core` | Tool creation |
+| `bind_tools()` | `langchain-core` | Attach tools to models |
+| `create_tool_calling_agent` | `langchain.agents` | Classic agent builder |
+| `create_agent` | `langchain.agents` | LangChain 1.0 agent builder |
+| `with_structured_output()` | `langchain-core` | Structured/typed output |
+| `Chroma` | `langchain-chroma` | Vector store |
+| `RecursiveCharacterTextSplitter` | `langchain-text-splitters` | Document chunking |
+
+**Note:** `langchain-community` is **archived** (June 2026) and is deliberately not used.
+
+---
+
+## Contributing
+
+Contributions welcome! This is an educational repository -- feel free to:
 
 - Fix typos or improve explanations
 - Add example datasets to `data/`
@@ -288,21 +337,21 @@ Contributions welcome! This is an educational repository — feel free to:
 
 ---
 
-## 📄 License
+## License
 
 This project is licensed under the MIT License. See [LICENSE](LICENSE) for details.
 
 ---
 
-## 🙏 Acknowledgements
+## Acknowledgements
 
-- [LangChain Documentation](https://docs.langchain.com/) — Official LangChain docs
-- [OpenAI API Documentation](https://platform.openai.com/docs/) — OpenAI platform
-- [Ollama](https://ollama.com/) — Local LLM runtime
-- [Chroma](https://www.trychroma.com/) — Open-source vector database
+- [LangChain Documentation](https://docs.langchain.com/) -- Official LangChain docs
+- [OpenAI API Documentation](https://platform.openai.com/docs/) -- OpenAI platform
+- [Ollama](https://ollama.com/) -- Local LLM runtime
+- [Chroma](https://www.trychroma.com/) -- Open-source vector database
 
 ---
 
 <p align="center">
-  <i>Built for BS Data Science students — Learn by doing.</i>
+  <i>Built for BS Data Science students -- Learn by doing.</i>
 </p>
