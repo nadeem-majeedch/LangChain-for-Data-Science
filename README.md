@@ -61,10 +61,10 @@ The notebooks are designed to be completed **in order**. Each notebook builds on
 ```
 LEARNING PATH
 
-01 --> 02 --> 03 --> 04 --> 05 --> 06 --> 07 --> 08 --> 09 --> 10 --> 11
-Intro   Msgs  LCEL   Embed   RAG   Agent  Capstone  Adv.RAG  Docs  SQL  DS
+01 --> 02 --> 03 --> 04 --> 05 --> 06 --> 07 --> 08 --> 09 --> 10 --> 11 --> 12
+Intro   Msgs  LCEL   Embed   RAG   Agent  Capstone  Adv.RAG  Docs  SQL  DS   Graph
 
-<-- Foundations --><-- Core Skills --><-- Advanced -->
+<-- Foundations --><-- Core Skills --><-- Advanced --><-- Expert -->
 ```
 
 | Phase | Notebooks | Focus |
@@ -72,6 +72,7 @@ Intro   Msgs  LCEL   Embed   RAG   Agent  Capstone  Adv.RAG  Docs  SQL  DS
 | **Foundations** | 01 -- 02 | What is LangChain, models, prompts, messages |
 | **Core Skills** | 03 -- 05 | Chains (LCEL), embeddings, vector stores, RAG |
 | **Advanced** | 06 -- 11 | Tools, agents, capstone, advanced RAG, document processing, SQL, DS agents |
+| **Expert** | 12 | LangGraph: stateful workflows, conditional routing, validation loops |
 
 ---
 
@@ -90,6 +91,7 @@ Intro   Msgs  LCEL   Embed   RAG   Agent  Capstone  Adv.RAG  Docs  SQL  DS
 | 09 | `09_Document_Loading_and_Multimodal_RAG.ipynb` | Document processing: PDF, CSV, JSON, HTML, multimodal RAG, security | Expert | 150--180 min |
 | 10 | `10_SQL_and_Database_AI.ipynb` | SQL generation, database tools, natural language data analyst, security | Expert | 120--150 min |
 | 11 | `11_Data_Science_Agents.ipynb` | DS agents: tools + RAG + structured output + autonomous analysis | Expert | 120--150 min |
+| 12 | `12_LangGraph_for_Data_Science.ipynb` | LangGraph: stateful graphs, conditional routing, validation loops, human-in-the-loop | Expert | 180--240 min |
 
 ---
 
@@ -222,7 +224,7 @@ api_key = os.getenv("OPENAI_API_KEY")
 | 1:00 -- 1:15 | **Embeddings & Vector Stores** | Explain embeddings conceptually, demo Chroma setup, similarity search on sample data |
 | 1:15 -- 1:35 | **RAG Pipeline** | Walk through a complete RAG application: load documents, split, embed, store, retrieve, generate |
 | 1:35 -- 1:50 | **Agents & Tools (Preview)** | Brief demo of an agent that uses tools. Explain what is coming in Notebook 06 |
-| 1:50 -- 2:00 | **Wrap-up & Next Steps** | Point students to remaining notebooks (07-08), capstone project, and advanced RAG topics |
+| 1:50 -- 2:00 | **Wrap-up & Next Steps** | Point students to remaining notebooks (07-12): capstone project, advanced RAG, document processing, SQL, DS agents, and LangGraph |
 
 ---
 
@@ -274,7 +276,8 @@ LangChain-for-Data-Science/
 │   ├── 08_Advanced_RAG.ipynb
 │   ├── 09_Document_Loading_and_Multimodal_RAG.ipynb
 │   ├── 10_SQL_and_Database_AI.ipynb
-│   └── 11_Data_Science_Agents.ipynb
+│   ├── 11_Data_Science_Agents.ipynb
+│   └── 12_LangGraph_for_Data_Science.ipynb
 ├── data/
 │   ├── README.md             # Data directory guide
 │   └── ds_notes/             # Knowledge base for RAG notebooks
