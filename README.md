@@ -78,27 +78,59 @@ Intro   Msgs  LCEL   Embed   RAG   Agent  Capstone  Adv.RAG  Docs  SQL  DS   Gra
 
 ---
 
+## How to Use This Repository
+
+The recommended learning workflow:
+
+```
+Read the concept → Understand the intuition → Open the notebook → Run the code → Experiment → Complete exercises → Build projects
+```
+
+| Step | Activity | Where |
+|------|----------|-------|
+| 1 | **Read** the conceptual notes | `readings/` folder |
+| 2 | **Open** the corresponding notebook | `notebooks/` folder |
+| 3 | **Run** the code examples | In Jupyter |
+| 4 | **Experiment** by changing parameters | In Jupyter |
+| 5 | **Complete** exercises and challenges | In the notebook |
+| 6 | **Build** the capstone project | Notebook 17 |
+
+---
+
+## Learning Notes
+
+**Conceptual learning notes** are available in the [`readings/`](readings/README.md) folder. These provide theory, intuition, and design principles for every concept in the notebooks.
+
+| Step | Layer | Purpose |
+|------|-------|--------|
+| 1 | **Readings** | Concepts, terminology, architecture, comparisons |
+| 2 | **Notebooks** | Hands-on code, experiments, exercises |
+
+> Read the concept first, then run the code.
+
+---
+
 ## Notebook Roadmap
 
 | # | Notebook | Topics | Difficulty | Est. Time |
 |---|---|---|---|---|
-| 01 | `01_LangChain_Introduction.ipynb` | What is LangChain, ecosystem, installation, first model call, API vs Ollama | Beginner | 60--90 min |
-| 02 | `02_Models_Prompts_and_Messages.ipynb` | Chat models, prompt templates, few-shot prompting, message types, output parsers, structured output | Beginner | 90--120 min |
-| 03 | `03_LCEL_and_Chains.ipynb` | LCEL pipe operator, RunnablePassthrough, RunnableLambda, RunnableParallel, sequential and parallel chains | Intermediate | 90--120 min |
-| 04 | `04_Embeddings_and_Vector_Stores.ipynb` | Text embeddings, Chroma vector store, similarity search, metadata filtering, persistence | Intermediate | 90--120 min |
-| 05 | `05_RAG_Applications.ipynb` | RAG pipeline, document loading, text splitting, retrieval, source inspection, failure modes | Advanced | 120--150 min |
-| 06 | `06_Tools_and_Agents.ipynb` | `@tool` decorator, `bind_tools`, `create_tool_calling_agent`, `create_agent` (LangChain 1.0), agent loop, responsible AI | Advanced | 120--150 min |
-| 07 | `07_Advanced_LangChain_Project.ipynb` | Capstone: Data Science AI Tutor combining RAG, tools, structured output, embeddings into one application | Expert | 150--180 min |
-| 08 | `08_Advanced_RAG.ipynb` | Advanced RAG: chunking, metadata filtering, query transformation, reranking, hybrid search, evaluation, security | Expert | 180--240 min |
-| 09 | `09_Document_Loading_and_Multimodal_RAG.ipynb` | Document processing: PDF, CSV, JSON, HTML, multimodal RAG, security | Expert | 150--180 min |
-| 10 | `10_SQL_and_Database_AI.ipynb` | SQL generation, database tools, natural language data analyst, security | Expert | 120--150 min |
-| 11 | `11_Data_Science_Agents.ipynb` | DS agents: tools + RAG + structured output + autonomous analysis | Expert | 120--150 min |
-| 12 | `12_LangGraph_for_Data_Science.ipynb` | LangGraph: stateful graphs, conditional routing, validation loops, human-in-the-loop | Expert | 180--240 min |
-| 13 | `13_LLM_Evaluation_and_Observability.ipynb` | Evaluation metrics, retrieval quality, LLM-as-judge, groundedness, observability, adversarial testing | Expert | 180--240 min |
-| 14 | `14_LLM_Security_and_Prompt_Injection.ipynb` | Threat modeling, prompt injection defense, tool security, data privacy, secure architecture | Expert | 180--240 min |
-| 15 | `15_MCP_for_Data_Science.ipynb` | Model Context Protocol: MCP servers, tools, resources, prompts, FastMCP, langchain-mcp-adapters | Expert | 180--240 min |
-| 16 | `16_Production_LLM_Applications.ipynb` | Production deployment: config, error handling, caching, rate limiting, cost control, testing, monitoring | Expert | 180--240 min |
-| 17 | `17_Final_Data_Science_Copilot.ipynb` | **Final Capstone**: Complete DS AI Copilot combining RAG, tools, SQL, agents, LangGraph, evaluation, security | Expert | 240--360 min |
+| 01 | `01_LangChain_Introduction.ipynb` | [LLMs](readings/01_LangChain_Introduction.md#what-is-an-llm) · [LangChain](readings/01_LangChain_Introduction.md#why-langchain) · [Architecture](readings/01_LangChain_Introduction.md#langchain-architecture) | Beginner | 60--90 min |
+| 02 | `02_Models_Prompts_and_Messages.ipynb` | [Chat Models](readings/02_Models_Prompts_and_Messages.md#chat-models) · [Messages](readings/02_Models_Prompts_and_Messages.md#messages) · [Prompts](readings/02_Models_Prompts_and_Messages.md#prompt-templates) · [Structured Output](readings/02_Models_Prompts_and_Messages.md#structured-output) | Beginner | 90--120 min |
+| 03 | `03_LCEL_and_Chains.ipynb` | [Chains](readings/03_LCEL_and_Chains.md#what-is-a-chain) · [LCEL](readings/03_LCEL_and_Chains.md#lcel--langchain-expression-language) · [Runnables](readings/03_LCEL_and_Chains.md#core-runnables) | Intermediate | 90--120 min |
+| 04 | `04_Embeddings_and_Vector_Stores.ipynb` | [Embeddings](readings/04_Embeddings_and_Vector_Stores.md#what-are-embeddings) · [Vector Stores](readings/04_Embeddings_and_Vector_Stores.md#vector-stores) · [Similarity Search](readings/04_Embeddings_and_Vector_Stores.md#similarity-search) | Intermediate | 90--120 min |
+| 05 | `05_RAG_Applications.ipynb` | [RAG](readings/05_RAG_Applications.md#what-is-rag) · [Chunking](readings/05_RAG_Applications.md#chunking) · [Retrieval](readings/05_RAG_Applications.md#retrieval-quality) · [Hallucination](readings/05_RAG_Applications.md#hallucination) | Advanced | 120--150 min |
+| 06 | `06_Tools_and_Agents.ipynb` | [Tools](readings/06_Tools_and_Agents.md#what-is-a-tool) · [Agent Loop](readings/06_Tools_and_Agents.md#the-agent-loop) · [Chain vs Agent](readings/06_Tools_and_Agents.md#chain-vs-agent) | Advanced | 120--150 min |
+| 07 | `07_Advanced_LangChain_Project.ipynb` | [Architecture](readings/07_Advanced_LangChain_Project.md#architecture-principles) · [Integration](readings/07_Advanced_LangChain_Project.md#integration-patterns) | Expert | 150--180 min |
+| 08 | `08_Advanced_RAG.ipynb` | [Advanced Chunking](readings/08_Advanced_RAG.md#advanced-chunking) · [Query Transformation](readings/08_Advanced_RAG.md#query-transformation) · [Reranking](readings/08_Advanced_RAG.md#reranking) | Expert | 180--240 min |
+| 09 | `09_Document_Loading_and_Multimodal_RAG.ipynb` | [Document Loading](readings/09_Document_Loading_and_Multimodal_RAG.md#real-world-knowledge-bases) · [Multimodal](readings/09_Document_Loading_and_Multimodal_RAG.md#multimodal-rag) | Expert | 150--180 min |
+| 10 | `10_SQL_and_Database_AI.ipynb` | [NL-to-SQL](readings/10_SQL_and_Database_AI.md#natural-language-to-sql) · [SQL Safety](readings/10_SQL_and_Database_AI.md#sql-safety) | Expert | 120--150 min |
+| 11 | `11_Data_Science_Agents.ipynb` | [DS Agents](readings/11_Data_Science_Agents.md#traditional-vs-agent-based-workflows) · [Agent Design](readings/11_Data_Science_Agents.md#agent-design-principles) | Expert | 120--150 min |
+| 12 | `12_LangGraph_for_Data_Science.ipynb` | [LangGraph](readings/12_LangGraph_for_Data_Science.md#why-langgraph) · [State](readings/12_LangGraph_for_Data_Science.md#core-concepts) · [Conditional Routing](readings/12_LangGraph_for_Data_Science.md#conditional-routing) | Expert | 180--240 min |
+| 13 | `13_LLM_Evaluation_and_Observability.ipynb` | [Evaluation](readings/13_LLM_Evaluation_and_Observability.md#why-llm-evaluation-is-hard) · [LLM-as-Judge](readings/13_LLM_Evaluation_and_Observability.md#llm-as-a-judge) · [Observability](readings/13_LLM_Evaluation_and_Observability.md#observability) | Expert | 180--240 min |
+| 14 | `14_LLM_Security_and_Prompt_Injection.ipynb` | [Threat Model](readings/14_LLM_Security_and_Prompt_Injection.md#threat-model) · [Prompt Injection](readings/14_LLM_Security_and_Prompt_Injection.md#prompt-injection) · [Tool Security](readings/14_LLM_Security_and_Prompt_Injection.md#tool-security) | Expert | 180--240 min |
+| 15 | `15_MCP_for_Data_Science.ipynb` | [MCP](readings/15_MCP_for_Data_Science.md#what-is-mcp) · [MCP Concepts](readings/15_MCP_for_Data_Science.md#mcp-concepts) · [LangChain vs MCP](readings/15_MCP_for_Data_Science.md#langchain-tools-vs-mcp-tools) | Expert | 180--240 min |
+| 16 | `16_Production_LLM_Applications.ipynb` | [Production Lifecycle](readings/16_Production_LLM_Applications.md#production-lifecycle) · [Error Handling](readings/16_Production_LLM_Applications.md#error-handling) · [Cost Control](readings/16_Production_LLM_Applications.md#cost-control) | Expert | 180--240 min |
+| 17 | `17_Final_Data_Science_Copilot.ipynb` | [Architecture](readings/17_Final_Data_Science_Copilot.md#architecture-components) · [Design Principles](readings/17_Final_Data_Science_Copilot.md#design-principles) · [Evaluation](readings/17_Final_Data_Science_Copilot.md#evaluation-framework) | Expert | 240--360 min |
 
 ---
 
@@ -272,7 +304,9 @@ LangChain-for-Data-Science/
 ├── requirements.txt          # Python dependencies
 ├── .env.example              # API key template (safe to commit)
 ├── .gitignore                # Protects secrets and temp files
-├── notebooks/                # Jupyter notebooks (01--11)
+├── readings/                 # Conceptual learning notes (17 readings)
+│   └── README.md             # Reading index and learning path
+├── notebooks/                # Jupyter notebooks (01--17)
 │   ├── 01_LangChain_Introduction.ipynb
 │   ├── 02_Models_Prompts_and_Messages.ipynb
 │   ├── 03_LCEL_and_Chains.ipynb
