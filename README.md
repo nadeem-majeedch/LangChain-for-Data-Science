@@ -61,10 +61,10 @@ The notebooks are designed to be completed **in order**. Each notebook builds on
 ```
 LEARNING PATH
 
-01 --> 02 --> 03 --> 04 --> 05 --> 06 --> 07 --> 08 --> 09 --> 10 --> 11 --> 12
-Intro   Msgs  LCEL   Embed   RAG   Agent  Capstone  Adv.RAG  Docs  SQL  DS   Graph
+01 --> 02 --> 03 --> 04 --> 05 --> 06 --> 07 --> 08 --> 09 --> 10 --> 11 --> 12 --> 13 --> 14
+Intro   Msgs  LCEL   Embed   RAG   Agent  Capstone  Adv.RAG  Docs  SQL  DS   Graph  Eval  Sec
 
-<-- Foundations --><-- Core Skills --><-- Advanced --><-- Expert -->
+<-- Foundations --><-- Core Skills --><-- Advanced --><-- Expert --><-- Mastery -->
 ```
 
 | Phase | Notebooks | Focus |
@@ -73,6 +73,7 @@ Intro   Msgs  LCEL   Embed   RAG   Agent  Capstone  Adv.RAG  Docs  SQL  DS   Gra
 | **Core Skills** | 03 -- 05 | Chains (LCEL), embeddings, vector stores, RAG |
 | **Advanced** | 06 -- 11 | Tools, agents, capstone, advanced RAG, document processing, SQL, DS agents |
 | **Expert** | 12 | LangGraph: stateful workflows, conditional routing, validation loops |
+| **Mastery** | 13 -- 14 | Evaluation, observability, LLM-as-judge, security, defense |
 
 ---
 
@@ -92,6 +93,8 @@ Intro   Msgs  LCEL   Embed   RAG   Agent  Capstone  Adv.RAG  Docs  SQL  DS   Gra
 | 10 | `10_SQL_and_Database_AI.ipynb` | SQL generation, database tools, natural language data analyst, security | Expert | 120--150 min |
 | 11 | `11_Data_Science_Agents.ipynb` | DS agents: tools + RAG + structured output + autonomous analysis | Expert | 120--150 min |
 | 12 | `12_LangGraph_for_Data_Science.ipynb` | LangGraph: stateful graphs, conditional routing, validation loops, human-in-the-loop | Expert | 180--240 min |
+| 13 | `13_LLM_Evaluation_and_Observability.ipynb` | Evaluation metrics, retrieval quality, LLM-as-judge, groundedness, observability, adversarial testing | Expert | 180--240 min |
+| 14 | `14_LLM_Security_and_Prompt_Injection.ipynb` | Threat modeling, prompt injection defense, tool security, data privacy, secure architecture | Expert | 180--240 min |
 
 ---
 
@@ -224,7 +227,7 @@ api_key = os.getenv("OPENAI_API_KEY")
 | 1:00 -- 1:15 | **Embeddings & Vector Stores** | Explain embeddings conceptually, demo Chroma setup, similarity search on sample data |
 | 1:15 -- 1:35 | **RAG Pipeline** | Walk through a complete RAG application: load documents, split, embed, store, retrieve, generate |
 | 1:35 -- 1:50 | **Agents & Tools (Preview)** | Brief demo of an agent that uses tools. Explain what is coming in Notebook 06 |
-| 1:50 -- 2:00 | **Wrap-up & Next Steps** | Point students to remaining notebooks (07-12): capstone project, advanced RAG, document processing, SQL, DS agents, and LangGraph |
+| 1:50 -- 2:00 | **Wrap-up & Next Steps** | Point students to remaining notebooks (07-14): capstone project, advanced RAG, document processing, SQL, DS agents, LangGraph, evaluation, and security |
 
 ---
 
@@ -277,7 +280,9 @@ LangChain-for-Data-Science/
 │   ├── 09_Document_Loading_and_Multimodal_RAG.ipynb
 │   ├── 10_SQL_and_Database_AI.ipynb
 │   ├── 11_Data_Science_Agents.ipynb
-│   └── 12_LangGraph_for_Data_Science.ipynb
+│   ├── 12_LangGraph_for_Data_Science.ipynb
+│   ├── 13_LLM_Evaluation_and_Observability.ipynb
+│   └── 14_LLM_Security_and_Prompt_Injection.ipynb
 ├── data/
 │   ├── README.md             # Data directory guide
 │   └── ds_notes/             # Knowledge base for RAG notebooks
