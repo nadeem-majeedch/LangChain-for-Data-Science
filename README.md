@@ -83,7 +83,7 @@ Intro   Msgs  LCEL   Embed   RAG   Agent  Capstone  Adv.RAG  Docs  SQL  DS   Gra
 The recommended learning workflow:
 
 ```
-Read the concept → Understand the intuition → Open the notebook → Run the code → Experiment → Complete exercises → Build projects
+📖 Read → 💻 Run Notebook → 🧪 Experiment → 📝 Practice Exercises → 🎯 Take Assessment → 🚀 Attempt Challenge
 ```
 
 | Step | Activity | Where |
@@ -92,8 +92,10 @@ Read the concept → Understand the intuition → Open the notebook → Run the 
 | 2 | **Open** the corresponding notebook | `notebooks/` folder |
 | 3 | **Run** the code examples | In Jupyter |
 | 4 | **Experiment** by changing parameters | In Jupyter |
-| 5 | **Complete** exercises and challenges | In the notebook |
-| 6 | **Build** the capstone project | Notebook 17 |
+| 5 | **Complete** practice exercises | `assignments/*/exercises.md` |
+| 6 | **Take** the assessment | `assignments/*/assessment.md` |
+| 7 | **Attempt** the challenge | `assignments/*/challenge.md` |
+| 8 | **Build** the capstone project | `assignments/final_capstone/` |
 
 ---
 
@@ -107,6 +109,22 @@ Read the concept → Understand the intuition → Open the notebook → Run the 
 | 2 | **Notebooks** | Hands-on code, experiments, exercises |
 
 > Read the concept first, then run the code.
+
+---
+
+## Exercises & Assessments
+
+Practice exercises, assessments, and challenges are available in the [`assignments/`](assignments/README.md) folder.
+
+| Layer | Purpose | Where |
+|-------|---------|-------|
+| **Exercises** | Practice and reinforcement | `assignments/*/exercises.md` |
+| **Assessments** | Test understanding (100 marks each) | `assignments/*/assessment.md` |
+| **Challenges** | Deep application projects | `assignments/*/challenge.md` |
+| **Capstone** | Complete DS AI Copilot project | `assignments/final_capstone/` |
+| **Course Assessment** | Comprehensive final exam | [`final_course_assessment.md`](final_course_assessment.md) |
+
+> Complete exercises after each notebook. Take assessments to test your understanding.
 
 ---
 
@@ -306,6 +324,10 @@ LangChain-for-Data-Science/
 ├── .gitignore                # Protects secrets and temp files
 ├── readings/                 # Conceptual learning notes (17 readings)
 │   └── README.md             # Reading index and learning path
+├── assignments/              # Exercises, assessments, challenges
+│   ├── README.md             # Assignment index
+│   └── final_capstone/       # Capstone project requirements
+├── solutions/                # Instructor solutions (not for students)
 ├── notebooks/                # Jupyter notebooks (01--17)
 │   ├── 01_LangChain_Introduction.ipynb
 │   ├── 02_Models_Prompts_and_Messages.ipynb
