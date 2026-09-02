@@ -61,8 +61,8 @@ The notebooks are designed to be completed **in order**. Each notebook builds on
 ```
 LEARNING PATH
 
-01 --> 02 --> 03 --> 04 --> 05 --> 06 --> 07 --> 08 --> 09 --> 10 --> 11 --> 12 --> 13 --> 14 --> 15 --> 16
-Intro   Msgs  LCEL   Embed   RAG   Agent  Capstone  Adv.RAG  Docs  SQL  DS   Graph  Eval  Sec  MCP  Prod
+01 --> 02 --> 03 --> 04 --> 05 --> 06 --> 07 --> 08 --> 09 --> 10 --> 11 --> 12 --> 13 --> 14 --> 15 --> 16 --> 17
+Intro   Msgs  LCEL   Embed   RAG   Agent  Capstone  Adv.RAG  Docs  SQL  DS   Graph  Eval  Sec  MCP  Prod  FINAL
 
 <-- Foundations --><-- Core Skills --><-- Advanced --><-- Expert --><-- Mastery -->
 ```
@@ -74,6 +74,7 @@ Intro   Msgs  LCEL   Embed   RAG   Agent  Capstone  Adv.RAG  Docs  SQL  DS   Gra
 | **Advanced** | 06 -- 11 | Tools, agents, capstone, advanced RAG, document processing, SQL, DS agents |
 | **Expert** | 12 | LangGraph: stateful workflows, conditional routing, validation loops |
 | **Mastery** | 13 -- 16 | Evaluation, observability, security, MCP, production deployment |
+| **Capstone** | 17 | Final project: Complete Data Science AI Copilot |
 
 ---
 
@@ -97,6 +98,7 @@ Intro   Msgs  LCEL   Embed   RAG   Agent  Capstone  Adv.RAG  Docs  SQL  DS   Gra
 | 14 | `14_LLM_Security_and_Prompt_Injection.ipynb` | Threat modeling, prompt injection defense, tool security, data privacy, secure architecture | Expert | 180--240 min |
 | 15 | `15_MCP_for_Data_Science.ipynb` | Model Context Protocol: MCP servers, tools, resources, prompts, FastMCP, langchain-mcp-adapters | Expert | 180--240 min |
 | 16 | `16_Production_LLM_Applications.ipynb` | Production deployment: config, error handling, caching, rate limiting, cost control, testing, monitoring | Expert | 180--240 min |
+| 17 | `17_Final_Data_Science_Copilot.ipynb` | **Final Capstone**: Complete DS AI Copilot combining RAG, tools, SQL, agents, LangGraph, evaluation, security | Expert | 240--360 min |
 
 ---
 
@@ -229,7 +231,7 @@ api_key = os.getenv("OPENAI_API_KEY")
 | 1:00 -- 1:15 | **Embeddings & Vector Stores** | Explain embeddings conceptually, demo Chroma setup, similarity search on sample data |
 | 1:15 -- 1:35 | **RAG Pipeline** | Walk through a complete RAG application: load documents, split, embed, store, retrieve, generate |
 | 1:35 -- 1:50 | **Agents & Tools (Preview)** | Brief demo of an agent that uses tools. Explain what is coming in Notebook 06 |
-| 1:50 -- 2:00 | **Wrap-up & Next Steps** | Point students to remaining notebooks (07-16): capstone project, advanced RAG, document processing, SQL, DS agents, LangGraph, evaluation, security, MCP, and production deployment |
+| 1:50 -- 2:00 | **Wrap-up & Next Steps** | Point students to remaining notebooks (07-17): advanced topics plus the final capstone project building a complete Data Science AI Copilot |
 
 ---
 
@@ -286,7 +288,8 @@ LangChain-for-Data-Science/
 │   ├── 13_LLM_Evaluation_and_Observability.ipynb
 │   ├── 14_LLM_Security_and_Prompt_Injection.ipynb
 │   ├── 15_MCP_for_Data_Science.ipynb
-│   └── 16_Production_LLM_Applications.ipynb
+│   ├── 16_Production_LLM_Applications.ipynb
+│   └── 17_Final_Data_Science_Copilot.ipynb
 ├── data/
 │   ├── README.md             # Data directory guide
 │   └── ds_notes/             # Knowledge base for RAG notebooks
