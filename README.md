@@ -83,19 +83,21 @@ Intro   Msgs  LCEL   Embed   RAG   Agent  Capstone  Adv.RAG  Docs  SQL  DS   Gra
 The recommended learning workflow:
 
 ```
-📖 Read → 💻 Run Notebook → 🧪 Experiment → 📝 Practice Exercises → 🎯 Take Assessment → 🚀 Attempt Challenge
+🧠 Pre-Test → 📖 Reading → 🎓 Lecture → 💻 Notebook → 🧪 Experiment → 📝 Exercise → 🎯 Assessment → 🧠 Post-Test → 🚀 Project
 ```
 
 | Step | Activity | Where |
 |------|----------|-------|
-| 1 | **Read** the conceptual notes | `readings/` folder |
-| 2 | **Open** the corresponding notebook | `notebooks/` folder |
-| 3 | **Run** the code examples | In Jupyter |
-| 4 | **Experiment** by changing parameters | In Jupyter |
-| 5 | **Complete** practice exercises | `assignments/*/exercises.md` |
-| 6 | **Take** the assessment | `assignments/*/assessment.md` |
-| 7 | **Attempt** the challenge | `assignments/*/challenge.md` |
-| 8 | **Build** the capstone project | `assignments/final_capstone/` |
+| 1 | **Pre-Test** | `quizzes/*/pre_quiz.md` |
+| 2 | **Read** the conceptual notes | `readings/` folder |
+| 3 | **Open** the corresponding notebook | `notebooks/` folder |
+| 4 | **Run** the code examples | In Jupyter |
+| 5 | **Experiment** by changing parameters | In Jupyter |
+| 6 | **Complete** practice exercises | `assignments/*/exercises.md` |
+| 7 | **Take** the assessment | `assignments/*/assessment.md` |
+| 8 | **Post-Test** | `quizzes/*/post_quiz.md` |
+| 9 | **Attempt** the challenge | `assignments/*/challenge.md` |
+| 10 | **Build** the capstone project | `assignments/final_capstone/` |
 
 ---
 
@@ -128,6 +130,21 @@ Practice exercises, assessments, and challenges are available in the [`assignmen
 
 ---
 
+## Quizzes & Knowledge Assessment
+
+Quick formative assessments for pre/post learning in the [`quizzes/`](quizzes/README.md) folder.
+
+| Type | Purpose | Duration |
+|------|---------|----------|
+| **Pre-Quiz** | Assess prior knowledge | 5-10 min |
+| **Post-Quiz** | Test learning outcomes | 10-15 min |
+| **Final Quiz** | Comprehensive assessment | 60 min |
+| **Question Bank** | Reusable questions | Varies |
+
+> Take the pre-quiz before each notebook. Take the post-quiz after.
+
+---
+
 ## Instructor Guide
 
 Teaching materials for university instructors are available in the [`instructor/`](instructor/README.md) folder.
@@ -147,23 +164,23 @@ Teaching materials for university instructors are available in the [`instructor/
 
 | # | Notebook | Topics | Difficulty | Est. Time |
 |---|---|---|---|---|
-| 01 | `01_LangChain_Introduction.ipynb` | [LLMs](readings/01_LangChain_Introduction.md#what-is-an-llm) · [LangChain](readings/01_LangChain_Introduction.md#why-langchain) · [Architecture](readings/01_LangChain_Introduction.md#langchain-architecture) | Beginner | 60--90 min |
-| 02 | `02_Models_Prompts_and_Messages.ipynb` | [Chat Models](readings/02_Models_Prompts_and_Messages.md#chat-models) · [Messages](readings/02_Models_Prompts_and_Messages.md#messages) · [Prompts](readings/02_Models_Prompts_and_Messages.md#prompt-templates) · [Structured Output](readings/02_Models_Prompts_and_Messages.md#structured-output) | Beginner | 90--120 min |
-| 03 | `03_LCEL_and_Chains.ipynb` | [Chains](readings/03_LCEL_and_Chains.md#what-is-a-chain) · [LCEL](readings/03_LCEL_and_Chains.md#lcel--langchain-expression-language) · [Runnables](readings/03_LCEL_and_Chains.md#core-runnables) | Intermediate | 90--120 min |
-| 04 | `04_Embeddings_and_Vector_Stores.ipynb` | [Embeddings](readings/04_Embeddings_and_Vector_Stores.md#what-are-embeddings) · [Vector Stores](readings/04_Embeddings_and_Vector_Stores.md#vector-stores) · [Similarity Search](readings/04_Embeddings_and_Vector_Stores.md#similarity-search) | Intermediate | 90--120 min |
-| 05 | `05_RAG_Applications.ipynb` | [RAG](readings/05_RAG_Applications.md#what-is-rag) · [Chunking](readings/05_RAG_Applications.md#chunking) · [Retrieval](readings/05_RAG_Applications.md#retrieval-quality) · [Hallucination](readings/05_RAG_Applications.md#hallucination) | Advanced | 120--150 min |
-| 06 | `06_Tools_and_Agents.ipynb` | [Tools](readings/06_Tools_and_Agents.md#what-is-a-tool) · [Agent Loop](readings/06_Tools_and_Agents.md#the-agent-loop) · [Chain vs Agent](readings/06_Tools_and_Agents.md#chain-vs-agent) | Advanced | 120--150 min |
-| 07 | `07_Advanced_LangChain_Project.ipynb` | [Architecture](readings/07_Advanced_LangChain_Project.md#architecture-principles) · [Integration](readings/07_Advanced_LangChain_Project.md#integration-patterns) | Expert | 150--180 min |
-| 08 | `08_Advanced_RAG.ipynb` | [Advanced Chunking](readings/08_Advanced_RAG.md#advanced-chunking) · [Query Transformation](readings/08_Advanced_RAG.md#query-transformation) · [Reranking](readings/08_Advanced_RAG.md#reranking) | Expert | 180--240 min |
-| 09 | `09_Document_Loading_and_Multimodal_RAG.ipynb` | [Document Loading](readings/09_Document_Loading_and_Multimodal_RAG.md#real-world-knowledge-bases) · [Multimodal](readings/09_Document_Loading_and_Multimodal_RAG.md#multimodal-rag) | Expert | 150--180 min |
-| 10 | `10_SQL_and_Database_AI.ipynb` | [NL-to-SQL](readings/10_SQL_and_Database_AI.md#natural-language-to-sql) · [SQL Safety](readings/10_SQL_and_Database_AI.md#sql-safety) | Expert | 120--150 min |
-| 11 | `11_Data_Science_Agents.ipynb` | [DS Agents](readings/11_Data_Science_Agents.md#traditional-vs-agent-based-workflows) · [Agent Design](readings/11_Data_Science_Agents.md#agent-design-principles) | Expert | 120--150 min |
-| 12 | `12_LangGraph_for_Data_Science.ipynb` | [LangGraph](readings/12_LangGraph_for_Data_Science.md#why-langgraph) · [State](readings/12_LangGraph_for_Data_Science.md#core-concepts) · [Conditional Routing](readings/12_LangGraph_for_Data_Science.md#conditional-routing) | Expert | 180--240 min |
-| 13 | `13_LLM_Evaluation_and_Observability.ipynb` | [Evaluation](readings/13_LLM_Evaluation_and_Observability.md#why-llm-evaluation-is-hard) · [LLM-as-Judge](readings/13_LLM_Evaluation_and_Observability.md#llm-as-a-judge) · [Observability](readings/13_LLM_Evaluation_and_Observability.md#observability) | Expert | 180--240 min |
-| 14 | `14_LLM_Security_and_Prompt_Injection.ipynb` | [Threat Model](readings/14_LLM_Security_and_Prompt_Injection.md#threat-model) · [Prompt Injection](readings/14_LLM_Security_and_Prompt_Injection.md#prompt-injection) · [Tool Security](readings/14_LLM_Security_and_Prompt_Injection.md#tool-security) | Expert | 180--240 min |
-| 15 | `15_MCP_for_Data_Science.ipynb` | [MCP](readings/15_MCP_for_Data_Science.md#what-is-mcp) · [MCP Concepts](readings/15_MCP_for_Data_Science.md#mcp-concepts) · [LangChain vs MCP](readings/15_MCP_for_Data_Science.md#langchain-tools-vs-mcp-tools) | Expert | 180--240 min |
-| 16 | `16_Production_LLM_Applications.ipynb` | [Production Lifecycle](readings/16_Production_LLM_Applications.md#production-lifecycle) · [Error Handling](readings/16_Production_LLM_Applications.md#error-handling) · [Cost Control](readings/16_Production_LLM_Applications.md#cost-control) | Expert | 180--240 min |
-| 17 | `17_Final_Data_Science_Copilot.ipynb` | [Architecture](readings/17_Final_Data_Science_Copilot.md#architecture-components) · [Design Principles](readings/17_Final_Data_Science_Copilot.md#design-principles) · [Evaluation](readings/17_Final_Data_Science_Copilot.md#evaluation-framework) | Expert | 240--360 min |
+| 01 | `01_LangChain_Introduction.ipynb` | [LLMs](readings/01_LangChain_Introduction.md#1-what-is-an-llm) · [LangChain](readings/01_LangChain_Introduction.md#3-why-langchain) · [Architecture](readings/01_LangChain_Introduction.md#4-langchain-architecture) | Beginner | 60--90 min |
+| 02 | `02_Models_Prompts_and_Messages.ipynb` | [Chat Models](readings/02_Models_Prompts_and_Messages.md#1-chat-models) · [Messages](readings/02_Models_Prompts_and_Messages.md#2-messages) · [Prompts](readings/02_Models_Prompts_and_Messages.md#3-prompt-templates) · [Structured Output](readings/02_Models_Prompts_and_Messages.md#5-structured-output) | Beginner | 90--120 min |
+| 03 | `03_LCEL_and_Chains.ipynb` | [Chains](readings/03_LCEL_and_Chains.md#1-what-is-a-chain) · [LCEL](readings/03_LCEL_and_Chains.md#2-lcel-langchain-expression-language) · [Runnables](readings/03_LCEL_and_Chains.md#3-core-runnables) | Intermediate | 90--120 min |
+| 04 | `04_Embeddings_and_Vector_Stores.ipynb` | [Embeddings](readings/04_Embeddings_and_Vector_Stores.md#2-what-are-embeddings) · [Vector Stores](readings/04_Embeddings_and_Vector_Stores.md#6-vector-stores) · [Similarity Search](readings/04_Embeddings_and_Vector_Stores.md#7-similarity-search) | Intermediate | 90--120 min |
+| 05 | `05_RAG_Applications.ipynb` | [RAG](readings/05_RAG_Applications.md#2-what-is-rag) · [Chunking](readings/05_RAG_Applications.md#4-chunking) · [Retrieval](readings/05_RAG_Applications.md#7-retrieval-quality) · [Hallucination](readings/05_RAG_Applications.md#6-hallucination) | Advanced | 120--150 min |
+| 06 | `06_Tools_and_Agents.ipynb` | [Tools](readings/06_Tools_and_Agents.md#1-what-is-a-tool) · [Agent Loop](readings/06_Tools_and_Agents.md#4-the-agent-loop) · [Chain vs Agent](readings/06_Tools_and_Agents.md#5-chain-vs-agent) | Advanced | 120--150 min |
+| 07 | `07_Advanced_LangChain_Project.ipynb` | [Architecture](readings/07_Advanced_LangChain_Project.md#2-architecture-principles) · [Integration](readings/07_Advanced_LangChain_Project.md#3-integration-patterns) | Expert | 150--180 min |
+| 08 | `08_Advanced_RAG.ipynb` | [Advanced Chunking](readings/08_Advanced_RAG.md#2-advanced-chunking) · [Query Transformation](readings/08_Advanced_RAG.md#4-query-transformation) · [Reranking](readings/08_Advanced_RAG.md#5-reranking) | Expert | 180--240 min |
+| 09 | `09_Document_Loading_and_Multimodal_RAG.ipynb` | [Document Loading](readings/09_Document_Loading_and_Multimodal_RAG.md#1-real-world-knowledge-bases) · [Multimodal](readings/09_Document_Loading_and_Multimodal_RAG.md#4-multimodal-rag) | Expert | 150--180 min |
+| 10 | `10_SQL_and_Database_AI.ipynb` | [NL-to-SQL](readings/10_SQL_and_Database_AI.md#4-natural-language-to-sql) · [SQL Safety](readings/10_SQL_and_Database_AI.md#3-sql-safety) | Expert | 120--150 min |
+| 11 | `11_Data_Science_Agents.ipynb` | [DS Agents](readings/11_Data_Science_Agents.md#1-traditional-vs-agent-based-workflows) · [Agent Design](readings/11_Data_Science_Agents.md#3-agent-design-principles) | Expert | 120--150 min |
+| 12 | `12_LangGraph_for_Data_Science.ipynb` | [LangGraph](readings/12_LangGraph_for_Data_Science.md#1-why-langgraph) · [State](readings/12_LangGraph_for_Data_Science.md#2-core-concepts) · [Conditional Routing](readings/12_LangGraph_for_Data_Science.md#4-conditional-routing) | Expert | 180--240 min |
+| 13 | `13_LLM_Evaluation_and_Observability.ipynb` | [Evaluation](readings/13_LLM_Evaluation_and_Observability.md#1-why-llm-evaluation-is-hard) · [LLM-as-Judge](readings/13_LLM_Evaluation_and_Observability.md#3-llm-as-a-judge) · [Observability](readings/13_LLM_Evaluation_and_Observability.md#4-observability) | Expert | 180--240 min |
+| 14 | `14_LLM_Security_and_Prompt_Injection.ipynb` | [Threat Model](readings/14_LLM_Security_and_Prompt_Injection.md#2-threat-model) · [Prompt Injection](readings/14_LLM_Security_and_Prompt_Injection.md#3-prompt-injection) · [Tool Security](readings/14_LLM_Security_and_Prompt_Injection.md#5-tool-security) | Expert | 180--240 min |
+| 15 | `15_MCP_for_Data_Science.ipynb` | [MCP](readings/15_MCP_for_Data_Science.md#1-what-is-mcp) · [MCP Concepts](readings/15_MCP_for_Data_Science.md#2-mcp-concepts) · [LangChain vs MCP](readings/15_MCP_for_Data_Science.md#3-langchain-tools-vs-mcp-tools) | Expert | 180--240 min |
+| 16 | `16_Production_LLM_Applications.ipynb` | [Production Lifecycle](readings/16_Production_LLM_Applications.md#2-production-lifecycle) · [Error Handling](readings/16_Production_LLM_Applications.md#4-error-handling) · [Cost Control](readings/16_Production_LLM_Applications.md#6-cost-control) | Expert | 180--240 min |
+| 17 | `17_Final_Data_Science_Copilot.ipynb` | [Architecture](readings/17_Final_Data_Science_Copilot.md#2-architecture-components) · [Design Principles](readings/17_Final_Data_Science_Copilot.md#3-design-principles) · [Evaluation](readings/17_Final_Data_Science_Copilot.md#5-evaluation-framework) | Expert | 240--360 min |
 
 ---
 
@@ -343,6 +360,10 @@ LangChain-for-Data-Science/
 │   ├── README.md             # Assignment index
 │   └── final_capstone/       # Capstone project requirements
 ├── solutions/                # Instructor solutions (not for students)
+├── quizzes/                  # Pre/post quizzes and question bank
+│   ├── README.md             # Quiz index and learning cycle
+│   ├── question_bank.md      # 65 reusable questions
+│   └── final_quiz.md         # Comprehensive 100-mark exam
 ├── instructor/               # Teaching guide for instructors
 │   ├── README.md             # Instructor guide index
 │   ├── course_plan.md        # Complete teaching roadmap

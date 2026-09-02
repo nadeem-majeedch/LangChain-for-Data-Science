@@ -8,13 +8,22 @@ This course uses a balanced assessment approach combining formative and summativ
 
 | Component | Weight | Frequency | Description |
 |-----------|--------|-----------|-------------|
+| **Pre-Quizzes** | Formative | Before each notebook | Assess prior knowledge (no grade) |
 | **Exercises** | 10% | Weekly | Practice problems after each notebook |
-| **Quizzes** | 10% | Bi-weekly | Short conceptual quizzes |
+| **Post-Quizzes** | 5% | After each notebook | Test learning outcomes |
 | **Lab Reports** | 15% | Weekly | Hands-on lab documentation |
 | **Assignments** | 20% | 3 times | Coding assignments |
 | **Module Test** | 15% | Once | Midterm covering basics |
 | **Final Project** | 20% | Once | Capstone project |
 | **Presentation** | 10% | Once | Final demo presentation |
+
+## Pre/Post Quiz Strategy
+
+**Pre-Quizzes:** Administer before each notebook (5-10 minutes). Use results to identify topics needing extra explanation. Do NOT grade pre-quizzes.
+
+**Post-Quizzes:** Administer after each notebook (10-15 minutes). Grade for participation or bonus marks. Use results to identify struggling students.
+
+**Learning Measurement:** Compare pre and post scores to measure learning gain per topic.
 
 ## Detailed Breakdown
 
