@@ -128,6 +128,21 @@ Practice exercises, assessments, and challenges are available in the [`assignmen
 
 ---
 
+## Instructor Guide
+
+Teaching materials for university instructors are available in the [`instructor/`](instructor/README.md) folder.
+
+| Resource | Description |
+|----------|-------------|
+| [Course Plan](instructor/course_plan.md) | Complete teaching roadmap |
+| [2-Hour Lecture Plan](instructor/2_hour_lecture_plan.md) | Detailed lecture structure |
+| [Teaching Roadmap](instructor/teaching_roadmap.md) | Notebook-to-topic mapping |
+| [Assessment Strategy](instructor/assessment_strategy.md) | Grading and assessment approach |
+| [Lab Activities](instructor/lab_activities.md) | 12 hands-on lab exercises |
+| [Common Mistakes](instructor/common_student_mistakes.md) | Student misconceptions and fixes |
+
+---
+
 ## Notebook Roadmap
 
 | # | Notebook | Topics | Difficulty | Est. Time |
@@ -328,6 +343,10 @@ LangChain-for-Data-Science/
 │   ├── README.md             # Assignment index
 │   └── final_capstone/       # Capstone project requirements
 ├── solutions/                # Instructor solutions (not for students)
+├── instructor/               # Teaching guide for instructors
+│   ├── README.md             # Instructor guide index
+│   ├── course_plan.md        # Complete teaching roadmap
+│   └── lab_activities.md     # 12 hands-on lab exercises
 ├── notebooks/                # Jupyter notebooks (01--17)
 │   ├── 01_LangChain_Introduction.ipynb
 │   ├── 02_Models_Prompts_and_Messages.ipynb
